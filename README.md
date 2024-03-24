@@ -1,2 +1,2 @@
 # AOSP-Logger
-Logger for AOSP
+This app gets logcat and stores it into a file for further usage.
