@@ -8,7 +8,7 @@ package {
 
 android_app {
     name: "Logger",
-    srcs: ["src/**/*.kt"],
+    srcs: ["src/**/*.kt", "src/**/*.java"],
     resource_dirs: ["res"],
 
     sdk_version: "current",
@@ -26,6 +26,8 @@ android_app {
     	"androidx.core_core-ktx",
     	"androidx.appcompat_appcompat",
     	"com.google.android.material_material",
-    	"androidx.lifecycle_lifecycle-extensions",    	
+    	"androidx.lifecycle_lifecycle-extensions",
     ],
+    
 }
+
