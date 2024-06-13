@@ -1,0 +1,819 @@
+--------- beginning of system
+02-02 06:29:35.070   661   679 I QISL    : QSEE Interrupt Service Listener Thread is started
+02-02 06:29:35.070   661   679 I QISL    : QSEE Interrupt Service Listener was activated successfully
+02-02 06:29:35.146   684   684 I vold    : Vold 3.0 (the awakening) firing up
+02-02 06:29:35.146   684   684 D vold    : Detected support for: ext4 f2fs vfat
+02-02 06:29:35.160   684   684 D vold    : VoldNativeService::start() completed OK
+02-02 06:29:35.271   697   697 I keystore2: keystore2_main: Keystore2 is starting.
+02-02 06:29:35.271   697   697 I keystore2: keystore2_main: Setting up sqlite logging for keystore2
+02-02 06:29:35.281   697   697 W keystore2: keystore2::metrics_store: In update_keystore_crash_sysprop: Failed to read the existing system property due to: In read_keystore_crash_count: Property not set..Therefore, keystore crashes will not be logged.
+02-02 06:29:35.285   697   697 I keystore2: keystore2_main: Starting thread pool now.
+02-02 06:29:35.304   697   697 I keystore2: keystore2::globals: Add emulation wrapper around Keymaster device for security level: SecurityLevel(1)
+02-02 06:29:35.305   697   697 I keystore2: keystore2::globals: Add emulation wrapper around Keymaster device for security level: SecurityLevel(2)
+02-02 06:29:35.310   697   697 I keystore2: keystore2_main: Not publishing IRemotelyProvisionedKeyPool service: In new_native_binder: Failed to get TEE Remote Provisioner instance.
+02-02 06:29:35.310   697   697 I keystore2: 
+02-02 06:29:35.310   697   697 I keystore2: Caused by:
+02-02 06:29:35.310   697   697 I keystore2:     0: In get_remotely_provisioned_component.
+02-02 06:29:35.310   697   697 I keystore2:     1: In connect_remotely_provisioned_component.
+02-02 06:29:35.310   697   697 I keystore2:     2: Error::Km(ErrorCode(-68))
+02-02 06:29:35.312   697   697 I keystore2: keystore2_main: Successfully registered Keystore 2.0 service.
+02-02 06:29:35.312   697   697 I keystore2: keystore2_main: Joining thread pool now.
+02-02 06:29:35.313   684   684 D vold    : fscrypt_mount_metadata_encrypted: /data encrypt: 0 format: 0 with null
+02-02 06:29:35.313   684   684 D vold    : metadata_key_dir/key: /metadata/vold/metadata_encryption/key
+02-02 06:29:35.314   684   684 D vold    : Key exists, using: /metadata/vold/metadata_encryption/key
+02-02 06:29:35.343   697   715 I keystore2: keystore2::shared_secret_negotiation: Shared secret negotiation concluded successfully.
+02-02 06:29:35.343   697   715 I keystore2: keystore2::shared_secret_negotiation: StrongBox does not provide a challenge, so no RoT transfer: Status(-8, EX_SERVICE_SPECIFIC): '-100: '
+02-02 06:29:35.350   684   684 D vold    : Mounting metadata-encrypted filesystem:/data
+02-02 06:29:35.370   684   684 I vold    : [libfs_mgr]Running /system/bin/fsck.f2fs -a -c 10000 --debug-cache /dev/block/dm-37
+02-02 06:29:35.650   684   684 I vold    : [libfs_mgr]__mount(source=/dev/block/dm-37,target=/data,type=f2fs)=0: Success
+02-02 06:29:35.651   684   684 D vold    : Mounted /data
+02-02 06:29:35.652   684   691 E NetlinkListener: recvmsg failed (No buffer space available)
+02-12 03:33:34.168   684   684 I Checkpoint: cp_prepareCheckpoint called
+02-12 03:33:34.190   684   684 I vold    : fscrypt_initialize_systemwide_keys
+02-12 03:33:34.191   684   684 D vold    : Key exists, using: /data/unencrypted/key
+02-12 03:33:34.210   684   684 D vold    : Detected support for FS_IOC_ADD_ENCRYPTION_KEY
+02-12 03:33:34.211   684   684 D vold    : Installed fscrypt key with ref 6b69d0cd269cb383 to /data
+02-12 03:33:34.211   684   684 D vold    : Added fscrypt-provisioning key for 6b69d0cd269cb383 to session keyring
+02-12 03:33:34.213   684   684 I vold    : Wrote system DE key reference to:/data/unencrypted/ref
+02-12 03:33:34.213   684   684 D vold    : Generating standard storage key
+02-12 03:33:34.214   684   684 D vold    : Installed fscrypt key with ref 152ea2818680b8fd to /data
+02-12 03:33:34.214   684   684 D vold    : Added fscrypt-provisioning key for 152ea2818680b8fd to session keyring
+02-12 03:33:34.215   684   684 I vold    : Wrote per boot key reference to:/data/unencrypted/per_boot_ref
+02-12 03:33:34.240   706   780 D BootAnimation: BootAnimationShownTiming start time: 4321ms
+02-12 03:33:34.258   684   684 I incfs   : Initial API level of the device: 29
+02-12 03:33:34.258   684   684 I incfs   : ro.incremental.enable: module:/vendor/lib/modules/incrementalfs.ko
+02-12 03:33:34.258   684   684 I incfs   : isFsAvailable: false
+02-12 03:33:34.258   684   684 I incfs   : isFsAvailable: false
+02-12 03:33:34.268   684   684 I incfs   : isFsAvailable: true
+02-12 03:33:34.268   684   684 I incfs   : successfully loaded IncFs kernel module "/vendor/lib/modules/incrementalfs.ko"
+02-12 03:33:34.268   684   684 I incfs   : IncFs_Features: v2
+02-12 03:33:34.269   697   717 I keystore2: keystore2::maintenance: In early_boot_ended.
+02-12 03:33:34.280   697   717 I keystore2: keystore2::globals: Touching Keystore 2.0 database for this first time since boot.
+02-12 03:33:34.280   697   717 I keystore2: keystore2::globals: Calling cleanup leftovers.
+02-12 03:33:34.352   697   717 I keystore2: keystore2::super_key: Starting boot level watcher.
+02-12 03:33:34.352   697   717 I keystore2: keystore2::maintenance: Call to earlyBootEnded succeeded for security level TRUSTED_ENVIRONMENT.
+02-12 03:33:34.352   697   793 I keystore2: keystore2::super_key: Read keystore.boot_level value 30
+02-12 03:33:34.353   697   793 I keystore2: keystore2::super_key: Read keystore.boot_level value 30
+02-12 03:33:34.355   697   717 I keystore2: keystore2::maintenance: Call to earlyBootEnded succeeded for security level STRONGBOX.
+02-12 03:33:34.991   684   684 D vold    : fscrypt_init_user0
+02-12 03:33:34.991   684   684 D vold    : Preparing: /data/misc/vold/user_keys
+02-12 03:33:34.992   684   684 D vold    : Preparing: /data/misc/vold/user_keys/ce
+02-12 03:33:34.993   684   684 D vold    : Preparing: /data/misc/vold/user_keys/de
+02-12 03:33:35.007   684   684 D vold    : Installed fscrypt key with ref 9f99bd0cddc3f3be to /data
+02-12 03:33:35.007   684   684 D vold    : Added fscrypt-provisioning key for 9f99bd0cddc3f3be to session keyring
+02-12 03:33:35.007   684   684 D vold    : Installed de key for user 0
+02-12 03:33:35.007   684   684 D vold    : fscrypt_prepare_user_storage for volume null, user 0, serial 0, flags 1
+02-12 03:33:35.007   684   684 D vold    : Preparing: /data/system/users/0
+02-12 03:33:35.008   684   684 D vold    : Preparing: /data/misc/profiles/cur/0
+02-12 03:33:35.009   684   684 D vold    : Preparing: /data/system_de/0
+02-12 03:33:35.009   684   684 D vold    : Preparing: /data/vendor_de/0
+02-12 03:33:35.009   684   684 D vold    : Preparing: /data/misc_de/0
+02-12 03:33:35.010   684   684 D vold    : Preparing: /data/user_de/0
+02-12 03:33:35.010   684   684 I vold    : Verified that /data/system_de/0 has the encryption policy 9f99bd0cddc3f3be v1 modes 127/4 flags 0x0
+02-12 03:33:35.010   684   684 I vold    : Verified that /data/vendor_de/0 has the encryption policy 9f99bd0cddc3f3be v1 modes 127/4 flags 0x0
+02-12 03:33:35.010   684   684 I vold    : Verified that /data/misc_de/0 has the encryption policy 9f99bd0cddc3f3be v1 modes 127/4 flags 0x0
+02-12 03:33:35.010   684   684 I vold    : Verified that /data/user_de/0 has the encryption policy 9f99bd0cddc3f3be v1 modes 127/4 flags 0x0
+02-12 03:33:35.010   684   684 D vold    : /system/bin/vold_prepare_subdirs
+02-12 03:33:35.010   684   684 D vold    :     prepare
+02-12 03:33:35.010   684   684 D vold    :     
+02-12 03:33:35.010   684   684 D vold    :     0
+02-12 03:33:35.010   684   684 D vold    :     1
+02-12 03:33:35.083   991   991 I odsign  : Trying to retrieve existing HMAC key...
+02-12 03:33:35.084   991   991 I odsign  : Trying to retrieve existing keystore key...
+02-12 03:33:35.098   991   991 I odsign  : Verified public key signature.
+02-12 03:33:35.098   991   991 I odsign  : Initialized Keystore key.
+02-12 03:33:35.099   991   991 I odsign  : Found and verified existing public key certificate: /data/misc/odsign/key.cert
+02-12 03:33:35.175   993   993 I odrefresh: ART APEX version 330400000
+02-12 03:33:35.175   993   993 I odrefresh: Factory ART APEX mounted.
+02-12 03:33:35.175   993   993 I odrefresh: System properties are set to default values.
+02-12 03:33:35.176   993   993 I odrefresh: Factory ART APEX mounted.
+02-12 03:33:35.176   993   993 I odrefresh: System properties are set to default values.
+02-12 03:33:35.176   993   993 I odrefresh: Factory APEXes mounted.
+02-12 03:33:35.176   993   993 I odrefresh: System properties are set to default values.
+02-12 03:33:35.179   991   991 I odsign  : Metrics report is empty
+02-12 03:33:35.180   991   991 I odsign  : /data/misc/odsign/odsign.info not found.
+02-12 03:33:35.180   991   991 I odsign  : odrefresh said artifacts are VALID
+02-12 03:33:35.180   991   991 I odsign  : On-device signing done.
+02-12 03:33:35.191   697   793 I keystore2: keystore2::super_key: keystore.boot_level 1000000000 hits maximum 1000000000, finishing.
+02-12 03:33:35.858  1087  1087 I irsc_util: Starting irsc tool
+02-12 03:33:35.862  1087  1087 I irsc_util: Num of entries:297
+02-12 03:33:35.862  1087  1087 I irsc_util: Ending irsc tool
+02-12 03:33:35.951  1120  1120 I gsid    : no DSU: No such file or directory
+02-12 03:33:35.987  1122  1122 I reserveblocks: DDR size candidates: persist.vendor.ramdump.ddr_size_override=-1, ro.boot.ddr_size=6442450944
+02-12 03:33:35.987  1122  1122 I reserveblocks: DDR size is 6GB (6442450944)
+02-12 03:33:35.988  1122  1122 I reserveblocks: Disabling ramdump
+02-12 03:33:35.991  1076  1076 I vendor.google.wifi_ext@1.0-service-vendor: Wifi Hal is booting up...
+02-12 03:33:35.995  1076  1076 I HidlServiceManagement: Registered android.hardware.wifi@1.6::IWifi/default
+02-12 03:33:35.996  1076  1076 I HidlServiceManagement: Registered vendor.google.wifi_ext@1.3::IWifiExt/default
+02-12 03:33:36.005  1122  1122 I reserveblocks: Ramdump is disabled, deleting ramdump reserved file: /data/vendor/ramdump/RAMDUMP_RESERVED
+02-12 03:33:36.005  1122  1122 E reserveblocks: Failed to delete /data/vendor/ramdump/RAMDUMP_RESERVED: No such file or directory
+02-12 03:33:36.005  1122  1122 I reserveblocks: Ramdump is disabled, deleting ramdump output file: /data/vendor/ramdump/apq/00/RAMDUMP_OUTPUT
+02-12 03:33:36.494  1015  1015 V Zygote64Timing: BeginPreload took to complete: 91ms
+02-12 03:33:36.530  1281  1281 I imsrcsd : Uce Service HAL  is starting up...
+02-12 03:33:36.530  1281  1281 I imsrcsd : Uce Service HAL  loading imsrcsbaseimpl
+02-12 03:33:36.586  1319  1319 I installd: installd firing up
+02-12 03:33:36.692  1016  1016 V Zygote32Timing: PostZygoteInitGC took to complete: 26ms
+02-12 03:33:36.692  1016  1016 V Zygote32Timing: ZygoteInit took to complete: 43ms
+02-12 03:33:36.702  1354  1354 I wificond: wificond is starting up...
+02-12 03:33:36.707  1354  1354 I HidlServiceManagement: Registered android.system.wifi.keystore@1.0::IKeystore/default
+02-12 03:33:36.720  1281  1281 I imsrcsd : Starting Service for First Time imsbaseimpl
+02-12 03:33:36.722  1281  1281 I imsrcsd : Interface com.qualcomm.qti.uceservice@2.3::IUceService  com.qualcomm.qti.uceservice is found in manifest
+02-12 03:33:36.723  1281  1281 I HidlServiceManagement: Registered com.qualcomm.qti.uceservice@2.3::IUceService/com.qualcomm.qti.uceservice
+02-12 03:33:36.725  1281  1281 I imsrcsd : Interface com.qualcomm.qti.imscmservice@2.2::IImsCmService  qti.ims.connectionmanagerservice is found in manifest
+02-12 03:33:36.727  1281  1281 I HidlServiceManagement: Registered com.qualcomm.qti.imscmservice@2.2::IImsCmService/qti.ims.connectionmanagerservice
+02-12 03:33:36.737  1281  1281 I imsrcsd : Interface vendor.qti.ims.factory@1.1::IImsFactory  default is not found in manifest
+02-12 03:33:36.738  1281  1281 I imsrcsd : Interface vendor.qti.ims.factory@1.0::IImsFactory  default is found in manifest
+02-12 03:33:36.739  1281  1281 I HidlServiceManagement: Registered vendor.qti.ims.factory@1.0::IImsFactory/default
+02-12 03:33:36.741  1281  1281 I imsrcsd : Interface vendor.qti.ims.callinfo@1.0::IService  default is found in manifest
+02-12 03:33:36.752  1281  1281 I HidlServiceManagement: Registered vendor.qti.ims.callinfo@1.0::IService/default
+02-12 03:33:36.752  1281  1281 I imsrcsd : ImsRcsBaseImpl ImsCallInfo After Registering Service
+02-12 03:33:36.819  1349  1349 I storaged: Unable to get AIDL health service, trying HIDL...
+02-12 03:33:37.965  1015  1015 V Zygote64Timing: PreloadClasses took to complete: 1472ms
+02-12 03:33:37.980  1015  1015 V Zygote64Timing: CacheNonBootClasspathClassLoaders took to complete: 14ms
+02-12 03:33:38.013  1015  1015 V Zygote64Timing: PreloadResources took to complete: 33ms
+02-12 03:33:38.060  1015  1015 V Zygote64Timing: ZygotePreload took to complete: 1657ms
+02-12 03:33:38.143  1015  1015 V Zygote64Timing: PostZygoteInitGC took to complete: 83ms
+02-12 03:33:38.143  1015  1015 V Zygote64Timing: ZygoteInit took to complete: 1750ms
+02-12 03:33:38.901  1712  1712 D SystemServerTiming: InitBeforeStartServices
+02-12 03:33:38.905  1712  1712 I SystemServer: Entered the Android system server!
+02-12 03:33:39.158  1712  1712 I SystemServerInitThreadPool: Creating instance with 8 threads
+02-12 03:33:39.692  1843  1843 I imsrcsd : Uce Service HAL  is starting up...
+02-12 03:33:39.692  1843  1843 I imsrcsd : getAndroidPropValue : vendor.ims.DATA_DAEMON_STATUS[1]
+02-12 03:33:39.921  1712  1712 V SystemServerTiming: InitBeforeStartServices took to complete: 1020ms
+02-12 03:33:39.922  1712  1712 D SystemServerTiming: StartServices
+02-12 03:33:39.922  1712  1712 D SystemServerTiming: startBootstrapServices
+02-12 03:33:39.922  1712  1712 D SystemServerTiming: StartWatchdog
+02-12 03:33:39.941  1712  1712 V SystemServerTiming: StartWatchdog took to complete: 19ms
+02-12 03:33:39.943  1712  1712 I SystemServer: Reading configuration...
+02-12 03:33:39.943  1712  1712 D SystemServerTiming: ReadingSystemConfig
+02-12 03:33:39.943  1712  1712 V SystemServerTiming: ReadingSystemConfig took to complete: 1ms
+02-12 03:33:39.943  1712  1712 D SystemServerTiming: PlatformCompat
+02-12 03:33:39.946  1712  1887 D SystemServerTimingAsync: InitThreadPoolExec:ReadingSystemConfig
+02-12 03:33:39.947  1712  1712 D CompatConfig: Found a config file: /system/etc/compatconfig/framework-platform-compat-config.xml
+02-12 03:33:39.947  1712  1887 D SystemServerInitThreadPool: Started executing ReadingSystemConfig
+02-12 03:33:39.951  1712  1887 I SystemConfig: Reading permissions from /system/etc/sysconfig/hiddenapi-package-whitelist.xml
+02-12 03:33:39.953  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@838053c
+02-12 03:33:39.953  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@9dab2c5
+02-12 03:33:39.953  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@df4541a
+02-12 03:33:39.953  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@8c3eb4b
+02-12 03:33:39.953  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@41e3928
+02-12 03:33:39.953  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@338b641
+02-12 03:33:39.953  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@df397e6
+02-12 03:33:39.953  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@ae3f127
+02-12 03:33:39.953  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@1b1bfd4
+02-12 03:33:39.953  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@319757d
+02-12 03:33:39.953  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@f514c72
+02-12 03:33:39.953  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@d1478c3
+02-12 03:33:39.953  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@8550540
+02-12 03:33:39.953  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@34cec79
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@663bdbe
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@b3bde1f
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@125356c
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@a6d735
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@499f7ca
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@f4a3d3b
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@7e63c58
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@77ab1b1
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@147c696
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@8157217
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@eaec604
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@bd7b7ed
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@331b622
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@1f518b3
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@543e70
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@984e5e9
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@6d9126e
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@d1e8d0f
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@d96d19c
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@7bcf7a5
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@d87e77a
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@dc0eb2b
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@10d6b88
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@caa6921
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@11d0146
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@1e10f07
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@5d1b834
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@ca3765d
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@897ebd2
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@8f594a3
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@cec23a0
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@1261b59
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@964f31e
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@942d7ff
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@d7fd9cc
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@3941415
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@169232a
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@ef6f51b
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@bb6c6b8
+02-12 03:33:39.954  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@7aedc91
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@5ce47f6
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@105c7f7
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@26d9664
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@1d3b0cd
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@28eed82
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@7c4ec93
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@b9fb4d0
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@4f78cc9
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@6c25fce
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@147beef
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@3934dfc
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@4632c85
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@9a8aada
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@f7b5b0b
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@2c54de8
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@52f0c01
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@4769aa6
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@c029ce7
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@a956094
+02-12 03:33:39.955  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@b7f673d
+02-12 03:33:39.956  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@ce1bb32
+02-12 03:33:39.956  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@dd22083
+02-12 03:33:39.956  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@b1f200
+02-12 03:33:39.956  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@f803a39
+02-12 03:33:39.956  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@c6c587e
+02-12 03:33:39.956  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@c8c41df
+02-12 03:33:39.956  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@5442e2c
+02-12 03:33:39.956  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@62140f5
+02-12 03:33:39.956  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@717e8a
+02-12 03:33:39.956  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@d9d1cfb
+02-12 03:33:39.956  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@fdc0118
+02-12 03:33:39.956  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@991f771
+02-12 03:33:39.957  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@ef0f956
+02-12 03:33:39.957  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@7168dd7
+02-12 03:33:39.957  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@f1c16c4
+02-12 03:33:39.957  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@d7d99ad
+02-12 03:33:39.957  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@c1b54e2
+02-12 03:33:39.957  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@44c3073
+02-12 03:33:39.957  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@725db30
+02-12 03:33:39.957  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@b0723a9
+02-12 03:33:39.957  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@c9ddd2e
+02-12 03:33:39.957  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@82f60cf
+02-12 03:33:39.957  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@ac57a5c
+02-12 03:33:39.957  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@855165
+02-12 03:33:39.957  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@ae9e3a
+02-12 03:33:39.957  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@96b3aeb
+02-12 03:33:39.959  1712  1712 D CompatConfig: Found a config file: /system/etc/compatconfig/services-platform-compat-config.xml
+02-12 03:33:39.963  1712  1887 I SystemConfig: Reading permissions from /system/etc/sysconfig/framework-sysconfig.xml
+02-12 03:33:39.963  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@3d86406
+02-12 03:33:39.963  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@4409ac7
+02-12 03:33:39.963  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@b94b8f4
+02-12 03:33:39.963  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@f65481d
+02-12 03:33:39.963  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@d86ba92
+02-12 03:33:39.963  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@e221c63
+02-12 03:33:39.963  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@be7060
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@1934919
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@e51edde
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@7101bbf
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@f0a328c
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@7065dd5
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@60b09ea
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@4b4b4db
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@c6deb78
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@f5c0251
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@e87dab6
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@33fc3b7
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@6524724
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@c8d728d
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@72eec42
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@802e453
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@5feb190
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@cebaa89
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@d438a8e
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@1cd72af
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@fc556bc
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@8db6645
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@cf1c19a
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@3088acb
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@8ef22a8
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@5121c1
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@71a5d66
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@19308a7
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@67c154
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@40d18fd
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@7dee9f2
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@85d8843
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@6299ec0
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@69747f9
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@9edb33e
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@6c6659f
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@d69e6ec
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@fb6ab5
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@28dc54a
+02-12 03:33:39.964  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@9b5bcbb
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@58485d8
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@744fd31
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@26aec16
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@a796997
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@5a82784
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@8bb3b6d
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@721b3a2
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@f610833
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@74237f0
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@7dd2169
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@98b67ee
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@a19f48f
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@b2ae31c
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@61d6b25
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@4ca14fa
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@fcb4aab
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@5911508
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@f5e94a1
+02-12 03:33:39.965  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@21486c6
+02-12 03:33:39.966  1712  1712 D CompatConfig: Found a config file: /system/etc/compatconfig/contacts-provider-platform-compat-config.xml
+02-12 03:33:39.966  1712  1887 I SystemConfig: Reading permissions from /system/etc/sysconfig/preinstalled-packages-com.android.providers.media.module.xml
+02-12 03:33:39.970  1712  1712 D CompatConfig: Found a config file: /system/etc/compatconfig/calendar-provider-compat-config.xml
+02-12 03:33:39.970  1712  1887 I SystemConfig: Reading permissions from /system/etc/sysconfig/preinstalled-packages-platform.xml
+02-12 03:33:39.972  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@6fc6423
+02-12 03:33:39.973  1712  1712 D CompatConfig: Found a config file: /system/etc/compatconfig/TeleService-platform-compat-config.xml
+02-12 03:33:39.974  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@9c436d9
+02-12 03:33:39.974  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@617a89e
+02-12 03:33:39.974  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@5a71f7f
+02-12 03:33:39.974  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@efb4b4c
+02-12 03:33:39.974  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@ab86795
+02-12 03:33:39.974  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@251b0aa
+02-12 03:33:39.975  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/javax.obex.xml
+02-12 03:33:39.975  1712  1712 D CompatConfig: Found a config file: /system/etc/compatconfig/documents-ui-compat-config.xml
+02-12 03:33:39.977  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@b84e811
+02-12 03:33:39.978  1712  1712 D CompatConfig: Found a config file: /system/etc/compatconfig/icu4j-platform-compat-config.xml
+02-12 03:33:39.981  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@dbb7f77
+02-12 03:33:39.981  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/android.test.runner.xml
+02-12 03:33:39.983  1712  1712 D CompatConfig: Found a config file: /system/system_ext/etc/compatconfig/settings-platform-compat-config.xml
+02-12 03:33:39.984  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/com.android.future.usb.accessory.xml
+02-12 03:33:39.984  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@2de9c13
+02-12 03:33:39.988  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/privapp_allowlist_com.android.providers.media.module.xml
+02-12 03:33:39.995  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/privapp_allowlist_com.android.adservices.api.xml
+02-12 03:33:39.998  1712  1712 D ApexManagerTiming: getActiveApexInfos_noCache
+02-12 03:33:40.001  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/com.android.documentsui.xml
+02-12 03:33:40.007  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/com.android.location.provider.xml
+02-12 03:33:40.014  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/com.android.networkstack.xml
+02-12 03:33:40.016  1712  1712 V ApexManagerTiming: getActiveApexInfos_noCache took to complete: 18ms
+02-12 03:33:40.018  1712  1712 D CompatConfig: No directory /apex/com.android.ipsec/etc/compatconfig, skipping
+02-12 03:33:40.018  1712  1712 D CompatConfig: No directory /apex/com.android.media/etc/compatconfig, skipping
+02-12 03:33:40.019  1712  1712 D CompatConfig: No directory /apex/com.android.media.swcodec/etc/compatconfig, skipping
+02-12 03:33:40.019  1712  1712 D CompatConfig: No directory /apex/com.android.scheduling/etc/compatconfig, skipping
+02-12 03:33:40.019  1712  1712 D CompatConfig: No directory /apex/com.android.cellbroadcast/etc/compatconfig, skipping
+02-12 03:33:40.020  1712  1712 D CompatConfig: Found a config file: /apex/com.android.btservices/etc/compatconfig/bluetooth-compat-config.xml
+02-12 03:33:40.022  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@461b2ae
+02-12 03:33:40.023  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/android.software.live_wallpaper.xml
+02-12 03:33:40.024  1712  1712 D CompatConfig: Found a config file: /apex/com.android.mediaprovider/etc/compatconfig/media-provider-platform-compat-config.xml
+02-12 03:33:40.025  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/android.test.base.xml
+02-12 03:33:40.026  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@c9a4bba
+02-12 03:33:40.027  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@ca11a6b
+02-12 03:33:40.027  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@6709c8
+02-12 03:33:40.027  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@98a4a61
+02-12 03:33:40.027  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@a916986
+02-12 03:33:40.027  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@1b4f247
+02-12 03:33:40.027  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@5c6fa74
+02-12 03:33:40.029  1712  1712 D CompatConfig: Found a config file: /apex/com.android.art/etc/compatconfig/libcore-platform-compat-config.xml
+02-12 03:33:40.030  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@a8a9812
+02-12 03:33:40.031  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@7446be3
+02-12 03:33:40.031  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@59349e0
+02-12 03:33:40.031  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@378e499
+02-12 03:33:40.031  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@776235e
+02-12 03:33:40.031  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@4c7e33f
+02-12 03:33:40.032  1712  1712 D CompatConfig: No directory /apex/com.android.vndk.v33/etc/compatconfig, skipping
+02-12 03:33:40.032  1712  1712 D CompatConfig: No directory /apex/com.android.os.statsd/etc/compatconfig, skipping
+02-12 03:33:40.032  1712  1712 D CompatConfig: No directory /apex/com.android.appsearch/etc/compatconfig, skipping
+02-12 03:33:40.034  1712  1712 D CompatConfig: Found a config file: /apex/com.android.wifi/etc/compatconfig/wifi-compat-config.xml
+02-12 03:33:40.034  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/android.test.mock.xml
+02-12 03:33:40.035  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@8fd176a
+02-12 03:33:40.035  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@6e1745b
+02-12 03:33:40.036  1712  1712 D CompatConfig: No directory /apex/com.android.runtime/etc/compatconfig, skipping
+02-12 03:33:40.036  1712  1712 D CompatConfig: No directory /apex/com.android.neuralnetworks/etc/compatconfig, skipping
+02-12 03:33:40.038  1712  1712 D CompatConfig: Found a config file: /apex/com.android.tethering/etc/compatconfig/connectivity-platform-compat-config.xml
+02-12 03:33:40.040  1712  1712 D CompatConfig: Adding: com.android.server.compat.config.Change@de98dd1
+02-12 03:33:40.040  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/privapp-permissions-platform.xml
+02-12 03:33:40.041  1712  1712 D CompatConfig: No directory /apex/com.android.sdkext/etc/compatconfig, skipping
+02-12 03:33:40.041  1712  1712 D CompatConfig: No directory /apex/com.android.extservices/etc/compatconfig, skipping
+02-12 03:33:40.041  1712  1712 D CompatConfig: No directory /apex/com.android.adservices/etc/compatconfig, skipping
+02-12 03:33:40.042  1712  1712 D CompatConfig: No directory /apex/com.android.i18n/etc/compatconfig, skipping
+02-12 03:33:40.042  1712  1712 D CompatConfig: No directory /apex/com.android.uwb/etc/compatconfig, skipping
+02-12 03:33:40.042  1712  1712 D CompatConfig: No directory /apex/com.android.adbd/etc/compatconfig, skipping
+02-12 03:33:40.042  1712  1712 D CompatConfig: No directory /apex/com.android.permission/etc/compatconfig, skipping
+02-12 03:33:40.043  1712  1712 D CompatConfig: No directory /apex/com.android.ondevicepersonalization/etc/compatconfig, skipping
+02-12 03:33:40.043  1712  1712 D CompatConfig: No directory /apex/com.android.vibrator.sunfish/etc/compatconfig, skipping
+02-12 03:33:40.043  1712  1712 D CompatConfig: No directory /apex/com.android.tzdata/etc/compatconfig, skipping
+02-12 03:33:40.043  1712  1712 D CompatConfig: No directory /apex/com.android.apex.cts.shim/etc/compatconfig, skipping
+02-12 03:33:40.043  1712  1712 D CompatConfig: No directory /apex/com.android.resolv/etc/compatconfig, skipping
+02-12 03:33:40.044  1712  1712 D CompatConfig: No directory /apex/com.android.conscrypt/etc/compatconfig, skipping
+02-12 03:33:40.051  1712  1712 V SystemServerTiming: PlatformCompat took to complete: 107ms
+02-12 03:33:40.051  1712  1712 D SystemServerTiming: StartFileIntegrityService
+02-12 03:33:40.051  1712  1712 I SystemServiceManager: Starting com.android.server.security.FileIntegrityService
+02-12 03:33:40.057  1712  1712 V SystemServerTiming: StartFileIntegrityService took to complete: 6ms
+02-12 03:33:40.057  1712  1712 D SystemServerTiming: StartInstaller
+02-12 03:33:40.057  1712  1712 I SystemServiceManager: Starting com.android.server.pm.Installer
+02-12 03:33:40.062  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/com.android.mediadrm.signer.xml
+02-12 03:33:40.066  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/org.apache.http.legacy.xml
+02-12 03:33:40.066  1712  1712 V SystemServerTiming: StartInstaller took to complete: 10ms
+02-12 03:33:40.067  1712  1712 D SystemServerTiming: DeviceIdentifiersPolicyService
+02-12 03:33:40.067  1712  1712 I SystemServiceManager: Starting com.android.server.os.DeviceIdentifiersPolicyService
+02-12 03:33:40.067  1712  1712 V SystemServerTiming: DeviceIdentifiersPolicyService took to complete: 1ms
+02-12 03:33:40.068  1712  1712 D SystemServerTiming: UriGrantsManagerService
+02-12 03:33:40.068  1712  1712 I SystemServiceManager: Starting com.android.server.uri.UriGrantsManagerService$Lifecycle
+02-12 03:33:40.069  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/android.software.webview.xml
+02-12 03:33:40.071  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/com.android.media.remotedisplay.xml
+02-12 03:33:40.072  1712  1712 V SystemServerTiming: UriGrantsManagerService took to complete: 4ms
+02-12 03:33:40.072  1712  1712 D SystemServerTiming: StartPowerStatsService
+02-12 03:33:40.072  1712  1712 I SystemServiceManager: Starting com.android.server.powerstats.PowerStatsService
+02-12 03:33:40.074  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/com.android.nfc_extras.xml
+02-12 03:33:40.076  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/com.android.intentresolver.xml
+02-12 03:33:40.080  1712  1887 I SystemConfig: Reading permissions from /system/etc/permissions/platform.xml
+02-12 03:33:40.088  1712  1712 V SystemServerTiming: StartPowerStatsService took to complete: 16ms
+02-12 03:33:40.088  1712  1712 D SystemServerTiming: StartIStatsService
+02-12 03:33:40.090  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/sysconfig/component-overrides.xml
+02-12 03:33:40.093  1712  1712 V SystemServerTiming: StartIStatsService took to complete: 5ms
+02-12 03:33:40.093  1712  1712 D SystemServerTiming: MemtrackProxyService
+02-12 03:33:40.094  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.software.midi.xml
+02-12 03:33:40.096  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.camera.raw.xml
+02-12 03:33:40.098  1712  1712 V SystemServerTiming: MemtrackProxyService took to complete: 5ms
+02-12 03:33:40.098  1712  1712 D SystemServerTiming: StartActivityManager
+02-12 03:33:40.098  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.se.omapi.uicc.xml
+02-12 03:33:40.098  1712  1712 I SystemServiceManager: Starting com.android.server.wm.ActivityTaskManagerService$Lifecycle
+02-12 03:33:40.100  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.telephony.carrierlock.xml
+02-12 03:33:40.103  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.sensor.accelerometer.xml
+02-12 03:33:40.104  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.vulkan.compute.xml
+02-12 03:33:40.106  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/com.nxp.mifare.xml
+02-12 03:33:40.108  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.nfc.xml
+02-12 03:33:40.111  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/com.google.android.camera.experimental2020_midyear.xml
+02-12 03:33:40.114  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.nfc.uicc.xml
+02-12 03:33:40.117  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.sensor.hifi_sensors.xml
+02-12 03:33:40.117  1712  1712 I SystemServiceManager: Starting com.android.server.am.ActivityManagerService$Lifecycle
+02-12 03:33:40.118  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.sensor.stepcounter.xml
+02-12 03:33:40.121  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.wifi.xml
+02-12 03:33:40.124  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.reboot_escrow.xml
+02-12 03:33:40.127  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.fingerprint.xml
+02-12 03:33:40.129  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.context_hub.xml
+02-12 03:33:40.129  1712  1712 I ActivityManager: Memory class: 256
+02-12 03:33:40.131  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.sensor.compass.xml
+02-12 03:33:40.133  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.wifi.rtt.xml
+02-12 03:33:40.136  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.vulkan.version.xml
+02-12 03:33:40.137  1712  1899 I Binder  : Setting heavy hitter watcher config: false, 0, 0.0
+02-12 03:33:40.138  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.se.omapi.ese.xml
+02-12 03:33:40.140  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.telephony.cdma.xml
+02-12 03:33:40.142  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.sensor.barometer.xml
+02-12 03:33:40.144  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.vulkan.level.xml
+02-12 03:33:40.147  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.software.vulkan.deqp.level.xml
+02-12 03:33:40.150  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/handheld_core_hardware.xml
+02-12 03:33:40.152  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.wifi.direct.xml
+02-12 03:33:40.154  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.location.gps.xml
+02-12 03:33:40.156  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.usb.accessory.xml
+02-12 03:33:40.158  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.software.ipsec_tunnels.xml
+02-12 03:33:40.160  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.audio.low_latency.xml
+02-12 03:33:40.161  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.software.device_id_attestation.xml
+02-12 03:33:40.163  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.device_unique_attestation.xml
+02-12 03:33:40.165  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.sensor.light.xml
+02-12 03:33:40.167  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.usb.host.xml
+02-12 03:33:40.169  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.bluetooth_le.xml
+02-12 03:33:40.171  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.telephony.ims.xml
+02-12 03:33:40.173  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.sensor.gyroscope.xml
+02-12 03:33:40.176  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.software.opengles.deqp.level.xml
+02-12 03:33:40.179  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.camera.flash-autofocus.xml
+02-12 03:33:40.181  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.camera.front.xml
+02-12 03:33:40.184  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.telephony.gsm.xml
+02-12 03:33:40.186  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.software.verified_boot.xml
+02-12 03:33:40.189  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.camera.full.xml
+02-12 03:33:40.192  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.sensor.stepdetector.xml
+02-12 03:33:40.195  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.strongbox_keystore.xml
+02-12 03:33:40.198  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
+02-12 03:33:40.201  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.opengles.aep.xml
+02-12 03:33:40.203  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.audio.pro.xml
+02-12 03:33:40.206  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.nfc.hcef.xml
+02-12 03:33:40.211  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.wifi.passpoint.xml
+02-12 03:33:40.214  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.software.sip.voip.xml
+02-12 03:33:40.216  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.bluetooth.xml
+02-12 03:33:40.219  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.nfc.ese.xml
+02-12 03:33:40.222  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.nfc.hce.xml
+02-12 03:33:40.224  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.identity_credential.xml
+02-12 03:33:40.230  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.wifi.aware.xml
+02-12 03:33:40.232  1712  1887 I SystemConfig: Reading permissions from /vendor/etc/permissions/android.hardware.sensor.proximity.xml
+02-12 03:33:40.237  1712  1887 I SystemConfig: Reading permissions from /product/etc/sysconfig/preinstalled-packages-platform-handheld-product.xml
+02-12 03:33:40.239  1712  1887 I SystemConfig: Reading permissions from /product/etc/sysconfig/preinstalled-packages-platform-aosp-product.xml
+02-12 03:33:40.241  1712  1887 I SystemConfig: Reading permissions from /product/etc/sysconfig/preinstalled-packages-platform-overlays.xml
+02-12 03:33:40.246  1712  1887 I SystemConfig: Reading permissions from /product/etc/permissions/com.android.imsserviceentitlement.xml
+02-12 03:33:40.249  1712  1887 I SystemConfig: Reading permissions from /product/etc/permissions/com.android.settings.intelligence.xml
+02-12 03:33:40.252  1712  1887 I SystemConfig: Reading permissions from /product/etc/permissions/com.android.contacts.xml
+02-12 03:33:40.256  1712  1887 I SystemConfig: Reading permissions from /product/etc/permissions/com.android.dialer.xml
+02-12 03:33:40.258  1712  1887 W SystemConfig: No directory /system_ext/etc/sysconfig, skipping
+02-12 03:33:40.260  1712  1887 I SystemConfig: Reading permissions from /system_ext/etc/permissions/org_codeaurora_ims.xml
+02-12 03:33:40.263  1712  1887 I SystemConfig: Reading permissions from /system_ext/etc/permissions/com.qualcomm.qcrilmsgtunnel.xml
+02-12 03:33:40.266  1712  1887 I SystemConfig: Reading permissions from /system_ext/etc/permissions/com.android.storagemanager.xml
+02-12 03:33:40.268  1712  1887 I SystemConfig: Reading permissions from /system_ext/etc/permissions/com.android.systemui.xml
+02-12 03:33:40.271  1712  1887 I SystemConfig: Reading permissions from /system_ext/etc/permissions/com.android.provision.xml
+02-12 03:33:40.273  1712  1887 I SystemConfig: Reading permissions from /system_ext/etc/permissions/com.android.emergency.xml
+02-12 03:33:40.276  1712  1887 I SystemConfig: Reading permissions from /system_ext/etc/permissions/com.android.launcher3.xml
+02-12 03:33:40.278  1712  1887 I SystemConfig: Reading permissions from /system_ext/etc/permissions/qti_telephony_hidl_wrapper.xml
+02-12 03:33:40.284  1712  1887 I SystemConfig: Reading permissions from /system_ext/etc/permissions/qcrilhook.xml
+02-12 03:33:40.287  1712  1887 I SystemConfig: Reading permissions from /system_ext/etc/permissions/com.android.settings.xml
+02-12 03:33:40.289  1712  1887 I SystemConfig: Reading permissions from /system_ext/etc/permissions/privapp_whitelist_org.lineageos.updater.xml
+02-12 03:33:40.292  1712  1887 I SystemConfig: Reading permissions from /system_ext/etc/permissions/com.android.carrierconfig.xml
+02-12 03:33:40.294  1712  1887 I SystemConfig: Reading permissions from /system_ext/etc/permissions/qti_telephony_utils.xml
+02-12 03:33:40.298  1712  1887 I SystemConfig: Reading permissions from /apex/com.android.ipsec/etc/permissions/android.net.ipsec.ike.xml
+02-12 03:33:40.305  1712  1887 I SystemConfig: Reading permissions from /apex/com.android.mediaprovider/etc/permissions/privapp_allowlist_com.android.providers.media.module.xml
+02-12 03:33:40.310  1712  1887 I SystemConfig: Reading permissions from /apex/com.android.extservices/etc/permissions/privapp_allowlist_android.ext.services.xml
+02-12 03:33:40.315  1712  1887 I SystemConfig: Reading permissions from /apex/com.android.adservices/etc/permissions/privapp_allowlist_com.android.adservices.api.xml
+02-12 03:33:40.319  1712  1887 I SystemConfig: Reading permissions from /apex/com.android.cellbroadcast/etc/permissions/privapp_allowlist_com.android.cellbroadcastreceiver.module.xml
+02-12 03:33:40.321  1712  1887 I SystemConfig: Reading permissions from /apex/com.android.cellbroadcast/etc/permissions/privapp_allowlist_com.android.cellbroadcastservice.xml
+02-12 03:33:40.325  1712  1887 I SystemConfig: Reading permissions from /apex/com.android.permission/etc/permissions/privapp_allowlist_com.android.permissioncontroller.xml
+02-12 03:33:40.330  1712  1887 I SystemConfig: Reading permissions from /apex/com.android.tethering/etc/permissions/permissions.xml
+02-12 03:33:40.335  1712  1887 I SystemConfig: Reading permissions from /apex/com.android.btservices/etc/permissions/privapp_allowlist_com.android.bluetooth.xml
+02-12 03:33:40.340  1712  1887 V SystemConfig: readAllPermissions took to complete: 393ms
+02-12 03:33:40.340  1712  1887 D SystemServerInitThreadPool: Finished executing ReadingSystemConfig
+02-12 03:33:40.340  1712  1887 V SystemServerTimingAsync: InitThreadPoolExec:ReadingSystemConfig took to complete: 393ms
+02-12 03:33:40.370  1712  1712 W PowerProfile: ambient.on is deprecated! Use ambient.on.display0 instead.
+02-12 03:33:40.370  1712  1712 W PowerProfile: screen.on is deprecated! Use screen.on.display0 instead.
+02-12 03:33:40.370  1712  1712 W PowerProfile: screen.full is deprecated! Use screen.full.display0 instead.
+02-12 03:33:40.371  1712  1712 W ModemPowerProfile: getAverageBatteryDrainMaH called with unexpected key: 0x0, drain:0,RAT:DEFAULT
+02-12 03:33:40.371  1712  1712 W ModemPowerProfile: getAverageBatteryDrainMaH called with unexpected key: 0x10000000, drain:IDLE,RAT:DEFAULT
+02-12 03:33:40.371  1712  1712 W ModemPowerProfile: getAverageBatteryDrainMaH called with unexpected key: 0x20000000, drain:RX,RAT:DEFAULT
+02-12 03:33:40.371  1712  1712 W ModemPowerProfile: getAverageBatteryDrainMaH called with unexpected key: 0x30000000, drain:TX,level:UNKNOWN(0x0)RAT:DEFAULT
+02-12 03:33:40.371  1712  1712 W ModemPowerProfile: getAverageBatteryDrainMaH called with unexpected key: 0x31000000, drain:TX,level:UNKNOWN(0x1000000)RAT:DEFAULT
+02-12 03:33:40.371  1712  1712 W ModemPowerProfile: getAverageBatteryDrainMaH called with unexpected key: 0x32000000, drain:TX,level:UNKNOWN(0x2000000)RAT:DEFAULT
+02-12 03:33:40.371  1712  1712 W ModemPowerProfile: getAverageBatteryDrainMaH called with unexpected key: 0x33000000, drain:TX,level:UNKNOWN(0x3000000)RAT:DEFAULT
+02-12 03:33:40.371  1712  1712 W ModemPowerProfile: getAverageBatteryDrainMaH called with unexpected key: 0x34000000, drain:TX,level:UNKNOWN(0x4000000)RAT:DEFAULT
+02-12 03:33:40.383  1712  1712 D BatteryStatsImpl: Reading daily items from /data/system/batterystats-daily.xml
+02-12 03:33:40.389  1712  1712 I KernelCpuUidFreqTimeReader: mPerClusterTimesAvailable=true
+02-12 03:33:40.464  1712  1934 W KernelMemoryBandwidthStats: No kernel memory bandwidth stats available
+02-12 03:33:40.525  1712  1712 I IntentFirewall: Read new rules (A:0 B:0 S:0)
+02-12 03:33:40.531  1712  1712 D OomAdjuster: Not killing cached processes
+02-12 03:33:40.534  1712  1712 D AppOps  : AppOpsService published
+02-12 03:33:40.536  1712  1712 V SystemServerTiming: StartActivityManager took to complete: 438ms
+02-12 03:33:40.536  1712  1712 D SystemServerTiming: StartDataLoaderManagerService
+02-12 03:33:40.536  1712  1712 I SystemServiceManager: Starting com.android.server.pm.DataLoaderManagerService
+02-12 03:33:40.538  1712  1712 V SystemServerTiming: StartDataLoaderManagerService took to complete: 2ms
+02-12 03:33:40.538  1712  1712 D SystemServerTiming: StartIncrementalService
+02-12 03:33:40.541  1712  1712 V SystemServerTiming: StartIncrementalService took to complete: 3ms
+02-12 03:33:40.541  1712  1712 D SystemServerTiming: StartPowerManager
+02-12 03:33:40.541  1712  1712 I SystemServiceManager: Starting com.android.server.power.PowerManagerService
+02-12 03:33:40.549  1712  1712 V SystemServerTiming: StartPowerManager took to complete: 8ms
+02-12 03:33:40.549  1712  1712 D SystemServerTiming: StartThermalManager
+02-12 03:33:40.549  1712  1712 I SystemServiceManager: Starting com.android.server.power.ThermalManagerService
+02-12 03:33:40.549  1712  1712 V SystemServerTiming: StartThermalManager took to complete: 0ms
+02-12 03:33:40.549  1712  1712 D SystemServerTiming: StartHintManager
+02-12 03:33:40.549  1712  1712 I SystemServiceManager: Starting com.android.server.power.hint.HintManagerService
+02-12 03:33:40.550  1712  1712 V SystemServerTiming: StartHintManager took to complete: 1ms
+02-12 03:33:40.550  1712  1712 D SystemServerTiming: InitPowerManagement
+02-12 03:33:40.550  1712  1712 V SystemServerTiming: InitPowerManagement took to complete: 1ms
+02-12 03:33:40.550  1712  1712 D SystemServerTiming: StartRecoverySystemService
+02-12 03:33:40.550  1712  1712 I SystemServiceManager: Starting com.android.server.recoverysystem.RecoverySystemService$Lifecycle
+02-12 03:33:40.551  1712  1712 V SystemServerTiming: StartRecoverySystemService took to complete: 1ms
+02-12 03:33:40.552  1712  1712 I PackageWatchdog: Syncing state, reason: added new observer
+02-12 03:33:40.552  1712  1712 I PackageWatchdog: Not pruning observers, elapsed time: 0ms
+02-12 03:33:40.552  1712  1712 I PackageWatchdog: Cancelling state sync, nothing to sync
+02-12 03:33:40.552  1712  1896 I PackageWatchdog: Saving observer state to file
+02-12 03:33:40.553  1712  1712 D SystemServerTiming: StartLightsService
+02-12 03:33:40.553  1712  1712 I SystemServiceManager: Starting com.android.server.lights.LightsService
+02-12 03:33:40.555  1712  1712 V SystemServerTiming: StartLightsService took to complete: 2ms
+02-12 03:33:40.555  1712  1712 D SystemServerTiming: StartDisplayOffloadService
+02-12 03:33:40.555  1712  1712 V SystemServerTiming: StartDisplayOffloadService took to complete: 0ms
+02-12 03:33:40.555  1712  1712 D SystemServerTiming: StartSidekickService
+02-12 03:33:40.555  1712  1712 V SystemServerTiming: StartSidekickService took to complete: 0ms
+02-12 03:33:40.555  1712  1712 D SystemServerTiming: StartDisplayManager
+02-12 03:33:40.555  1712  1712 I SystemServiceManager: Starting com.android.server.display.DisplayManagerService
+02-12 03:33:40.563  1712  1712 V SystemServerTiming: StartDisplayManager took to complete: 8ms
+02-12 03:33:40.563  1712  1712 D SystemServerTiming: WaitForDisplay
+02-12 03:33:40.563  1712  1712 I SystemServiceManager: Starting phase 100
+02-12 03:33:40.563  1712  1712 D SystemServerTiming: OnBootPhase_100
+02-12 03:33:40.563  1712  1712 D SystemServerTiming: OnBootPhase_100_com.android.server.security.FileIntegrityService
+02-12 03:33:40.563  1712  1712 V SystemServerTiming: OnBootPhase_100_com.android.server.security.FileIntegrityService took to complete: 0ms
+02-12 03:33:40.563  1712  1712 D SystemServerTiming: OnBootPhase_100_com.android.server.pm.Installer
+02-12 03:33:40.563  1712  1712 V SystemServerTiming: OnBootPhase_100_com.android.server.pm.Installer took to complete: 0ms
+02-12 03:33:40.563  1712  1712 D SystemServerTiming: OnBootPhase_100_com.android.server.os.DeviceIdentifiersPolicyService
+02-12 03:33:40.563  1712  1712 V SystemServerTiming: OnBootPhase_100_com.android.server.os.DeviceIdentifiersPolicyService took to complete: 0ms
+02-12 03:33:40.563  1712  1712 D SystemServerTiming: OnBootPhase_100_com.android.server.uri.UriGrantsManagerService$Lifecycle
+02-12 03:33:40.563  1712  1712 V SystemServerTiming: OnBootPhase_100_com.android.server.uri.UriGrantsManagerService$Lifecycle took to complete: 0ms
+02-12 03:33:40.563  1712  1712 D SystemServerTiming: OnBootPhase_100_com.android.server.powerstats.PowerStatsService
+02-12 03:33:40.563  1712  1712 V SystemServerTiming: OnBootPhase_100_com.android.server.powerstats.PowerStatsService took to complete: 0ms
+02-12 03:33:40.563  1712  1712 D SystemServerTiming: OnBootPhase_100_com.android.server.wm.ActivityTaskManagerService$Lifecycle
+02-12 03:33:40.563  1712  1712 V SystemServerTiming: OnBootPhase_100_com.android.server.wm.ActivityTaskManagerService$Lifecycle took to complete: 0ms
+02-12 03:33:40.563  1712  1712 D SystemServerTiming: OnBootPhase_100_com.android.server.am.ActivityManagerService$Lifecycle
+02-12 03:33:40.563  1712  1712 V SystemServerTiming: OnBootPhase_100_com.android.server.am.ActivityManagerService$Lifecycle took to complete: 0ms
+02-12 03:33:40.563  1712  1712 D SystemServerTiming: OnBootPhase_100_com.android.server.pm.DataLoaderManagerService
+02-12 03:33:40.563  1712  1712 V SystemServerTiming: OnBootPhase_100_com.android.server.pm.DataLoaderManagerService took to complete: 0ms
+02-12 03:33:40.563  1712  1712 D SystemServerTiming: OnBootPhase_100_com.android.server.power.PowerManagerService
+02-12 03:33:40.563  1712  1712 V SystemServerTiming: OnBootPhase_100_com.android.server.power.PowerManagerService took to complete: 0ms
+02-12 03:33:40.563  1712  1712 D SystemServerTiming: OnBootPhase_100_com.android.server.power.ThermalManagerService
+02-12 03:33:40.563  1712  1712 V SystemServerTiming: OnBootPhase_100_com.android.server.power.ThermalManagerService took to complete: 0ms
+02-12 03:33:40.564  1712  1712 D SystemServerTiming: OnBootPhase_100_com.android.server.power.hint.HintManagerService
+02-12 03:33:40.564  1712  1712 V SystemServerTiming: OnBootPhase_100_com.android.server.power.hint.HintManagerService took to complete: 0ms
+02-12 03:33:40.564  1712  1712 D SystemServerTiming: OnBootPhase_100_com.android.server.recoverysystem.RecoverySystemService$Lifecycle
+02-12 03:33:40.564  1712  1712 V SystemServerTiming: OnBootPhase_100_com.android.server.recoverysystem.RecoverySystemService$Lifecycle took to complete: 0ms
+02-12 03:33:40.564  1712  1712 D SystemServerTiming: OnBootPhase_100_com.android.server.lights.LightsService
+02-12 03:33:40.564  1712  1712 V SystemServerTiming: OnBootPhase_100_com.android.server.lights.LightsService took to complete: 0ms
+02-12 03:33:40.564  1712  1712 D SystemServerTiming: OnBootPhase_100_com.android.server.display.DisplayManagerService
+02-12 03:33:40.568  1712  1883 E LocalDisplayAdapter: Can't find display mode with id -1
+02-12 03:33:40.568  1712  1883 W LocalDisplayAdapter: DisplayModeSpecs base mode no longer available, using currently active mode.
+02-12 03:33:40.572  1712  1883 I DisplayDeviceConfig: no thermal throttling config found
+02-12 03:33:40.584  1712  1883 I DisplayDeviceRepository: Display device added: DisplayDeviceInfo{"Built-in Screen": uniqueId="local:4630946475097398401", 1080 x 2340, modeId 1, defaultModeId 1, supportedModes [{id=1, width=1080, height=2340, fps=60.000004, alternativeRefreshRates=[]}], colorMode 0, supportedColorModes [0, 7, 9], hdrCapabilities HdrCapabilities{mSupportedHdrTypes=[2, 3], mMaxLuminance=500.0, mMaxAverageLuminance=500.0, mMinLuminance=0.0}, allmSupported false, gameContentTypeSupported false, density 440, 442.451 x 443.552 dpi, appVsyncOff 2333332, presDeadline 11500000, cutout DisplayCutout{insets=Rect(0, 136 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(0, 0 - 136, 136), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2340 physicalDisplayWidth=1080 physicalDisplayHeight=2340 density={2.75} cutoutSpec={M 40,83 a 42.75,42.75 0 1 0 85.5,0 42.75,42.75 0 1 0 -85.5,0 Z @left} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, touch INTERNAL, rotation 0, type INTERNAL, address {port=129, model=0x40446d4886071c}, deviceProductInfo DeviceProductInfo{name=, manufacturerPnpId=QCM, productId=1, modelYear=null, manufactureDate=ManufactureDate{week=27, year=2006}, connectionToSinkType=0}, state UNKNOWN, committedState UNKNOWN, frameRateOverride , brightnessMinimum 0.0, brightnessMaximum 1.0, brightnessDefault 0.31889763, roundedCorners RoundedCorners{[RoundedCorner{position=TopLeft, radius=102, center=Point(102, 102)}, RoundedCorner{position=TopRight, radius=102, center=Point(978, 102)}, RoundedCorner{position=BottomRight, radius=102, center=Point(978, 2238)}, RoundedCorner{position=BottomLeft, radius=102, center=Point(102, 2238)}]}, FLAG_ALLOWED_TO_BE_DEFAULT_DISPLAY, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, installOrientation 0}
+02-12 03:33:40.586  1712  1883 I LogicalDisplayMapper: Applying layout: [{addr: {port=129, model=0x40446d4886071c}, dispId: 0(ON)}], Previous layout: null
+02-12 03:33:40.593  1712  1883 I LogicalDisplayMapper: Adding new display: 0: DisplayInfo{"Built-in Screen", displayId 0", displayGroupId -1, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, FLAG_TRUSTED, real 1080 x 2340, largest app 1080 x 2340, smallest app 1080 x 2340, appVsyncOff 2333332, presDeadline 11500000, mode 1, defaultMode 1, modes [{id=1, width=1080, height=2340, fps=60.000004, alternativeRefreshRates=[]}], hdrCapabilities HdrCapabilities{mSupportedHdrTypes=[2, 3], mMaxLuminance=500.0, mMaxAverageLuminance=500.0, mMinLuminance=0.0}, userDisabledHdrTypes [], minimalPostProcessingSupported false, rotation 0, state UNKNOWN, committedState UNKNOWN, type INTERNAL, uniqueId "local:4630946475097398401", app 1080 x 2340, density 440 (442.451 x 443.552) dpi, layerStack 0, colorMode 0, supportedColorModes [0, 7, 9], address {port=129, model=0x40446d4886071c}, deviceProductInfo DeviceProductInfo{name=, manufacturerPnpId=QCM, productId=1, modelYear=null, manufactureDate=ManufactureDate{week=27, year=2006}, connectionToSinkType=0}, removeMode 0, refreshRateOverride 0.0, brightnessMinimum 0.0, brightnessMaximum 1.0, brightnessDefault 0.31889763, installOrientation ROTATION_0}
+02-12 03:33:40.595  1712  1883 I LogicalDisplayMapper: Setting new display group 0 for display 0, from previous group: null
+02-12 03:33:40.595  1712  1883 W android.permission.PermissionManager: Missing ActivityManager; assuming 1000 holds android.permission.READ_DEVICE_CONFIG
+02-12 03:33:40.603  1712  1712 V SystemServerTiming: OnBootPhase_100_com.android.server.display.DisplayManagerService took to complete: 39ms
+02-12 03:33:40.603  1712  1712 V SystemServerTiming: OnBootPhase_100 took to complete: 41ms
+02-12 03:33:40.603  1712  1712 V SystemServerTiming: WaitForDisplay took to complete: 41ms
+02-12 03:33:40.604  1712  1712 D SystemServerTiming: StartDomainVerificationService
+02-12 03:33:40.608  1712  1712 V SystemServerTiming: StartDomainVerificationService took to complete: 4ms
+02-12 03:33:40.608  1712  1712 D SystemServerTiming: StartPackageManagerService
+02-12 03:33:40.608  1712  1712 I Watchdog: Pausing HandlerChecker: main thread for reason: packagemanagermain. Pause count: 1
+02-12 03:33:40.611  1712  1712 D PackageManagerTiming: create package manager
+02-12 03:33:40.618  1712  1712 D PackageManagerTiming: createSubComponents
+02-12 03:33:40.635  1712  1954 W ProcessCpuTracker: Failed to stat(/proc/1950): android.system.ErrnoException: stat failed: ENOENT (No such file or directory)
+02-12 03:33:40.635  1712  1954 W ProcessCpuTracker: Skipping unknown process pid 1950
+02-12 03:33:40.635  1712  1954 W ProcessCpuTracker: Failed to stat(/proc/1952): android.system.ErrnoException: stat failed: ENOENT (No such file or directory)
+02-12 03:33:40.635  1712  1954 W ProcessCpuTracker: Skipping unknown process pid 1952
+02-12 03:33:40.644  1712  1712 V PackageManagerTiming: createSubComponents took to complete: 27ms
+02-12 03:33:40.645  1712  1712 D PackageManagerTiming: addSharedUsers
+02-12 03:33:40.645  1712  1712 V PackageManagerTiming: addSharedUsers took to complete: 0ms
+02-12 03:33:40.646  1712  1712 W BackgroundDexOptService: SysProp pm.dexopt.downgrade_after_inactive_days not set
+02-12 03:33:40.647  1712  1712 D PackageManagerTiming: get system config
+02-12 03:33:40.647  1712  1712 V PackageManagerTiming: get system config took to complete: 0ms
+02-12 03:33:40.651  1712  1712 D SELinuxMMAC: Using policy file /system/etc/selinux/plat_mac_permissions.xml
+02-12 03:33:40.655  1712  1712 D SELinuxMMAC: Using policy file /system_ext/etc/selinux/system_ext_mac_permissions.xml
+02-12 03:33:40.656  1712  1712 D SELinuxMMAC: Using policy file /product/etc/selinux/product_mac_permissions.xml
+02-12 03:33:40.657  1712  1712 D SELinuxMMAC: Using policy file /vendor/etc/selinux/vendor_mac_permissions.xml
+02-12 03:33:40.660  1712  1712 D PackageManagerTiming: loadFallbacks
+02-12 03:33:40.663  1712  1712 V PackageManagerTiming: loadFallbacks took to complete: 2ms
+02-12 03:33:40.663  1712  1712 D PackageManagerTiming: read user settings
+02-12 03:33:40.735  1712  1712 E PackageManager: Package com.android.providers.telephony was user id 0 but is now user SharedUserSetting{f615989 android.uid.phone/1001} with id 1001; I am not changing its files so it will probably fail!
+02-12 03:33:40.739  1712  1712 E PackageManager: Package com.android.dynsystem was user id 0 but is now user SharedUserSetting{c7e11bc android.uid.system/1000} with id 1000; I am not changing its files so it will probably fail!
+02-12 03:33:40.740  1712  1712 E PackageManager: Package com.android.providers.calendar was user id 0 but is now user SharedUserSetting{9f8c1cb android.uid.calendar/10038} with id 10038; I am not changing its files so it will probably fail!
+02-12 03:33:40.740  1712  1712 E PackageManager: Package com.android.providers.media was user id 0 but is now user SharedUserSetting{2554066 android.media/10029} with id 10029; I am not changing its files so it will probably fail!
+02-12 03:33:40.740  1712  1712 E PackageManager: Package com.android.mms.service was user id 0 but is now user SharedUserSetting{f615989 android.uid.phone/1001} with id 1001; I am not changing its files so it will probably fail!
+02-12 03:33:40.741  1712  1712 E PackageManager: Package com.android.providers.downloads was user id 0 but is now user SharedUserSetting{2554066 android.media/10029} with id 10029; I am not changing its files so it will probably fail!
+02-12 03:33:40.741  1712  1712 E PackageManager: Package vendor.qti.hardware.cacert.server was user id 0 but is now user SharedUserSetting{556b6f9 com.qualcomm.qti.qtidataservices/10061} with id 10061; I am not changing its files so it will probably fail!
+02-12 03:33:40.741  1712  1712 E PackageManager: Package com.qualcomm.qti.telephonyservice was user id 0 but is now user SharedUserSetting{34761ec android.uid.qtiphone/10091} with id 10091; I am not changing its files so it will probably fail!
+02-12 03:33:40.742  1712  1712 E PackageManager: Package vendor.qti.iwlan was user id 0 but is now user SharedUserSetting{556b6f9 com.qualcomm.qti.qtidataservices/10061} with id 10061; I am not changing its files so it will probably fail!
+02-12 03:33:40.743  1712  1712 E PackageManager: Package com.android.providers.downloads.ui was user id 0 but is now user SharedUserSetting{2554066 android.media/10029} with id 10029; I am not changing its files so it will probably fail!
+02-12 03:33:40.743  1712  1712 E PackageManager: Package com.android.networkstack was user id 0 but is now user SharedUserSetting{dadd097 android.uid.networkstack/1073} with id 1073; I am not changing its files so it will probably fail!
+02-12 03:33:40.743  1712  1712 E PackageManager: Package android was user id 0 but is now user SharedUserSetting{c7e11bc android.uid.system/1000} with id 1000; I am not changing its files so it will probably fail!
+02-12 03:33:40.744  1712  1712 E PackageManager: Package com.android.mtp was user id 0 but is now user SharedUserSetting{2554066 android.media/10029} with id 10029; I am not changing its files so it will probably fail!
+02-12 03:33:40.744  1712  1712 E PackageManager: Package com.android.nfc was user id 0 but is now user SharedUserSetting{9f66aee android.uid.nfc/1027} with id 1027; I am not changing its files so it will probably fail!
+02-12 03:33:40.744  1712  1712 E PackageManager: Package com.android.ons was user id 0 but is now user SharedUserSetting{f615989 android.uid.phone/1001} with id 1001; I am not changing its files so it will probably fail!
+02-12 03:33:40.745  1712  1712 E PackageManager: Package com.android.stk was user id 0 but is now user SharedUserSetting{f615989 android.uid.phone/1001} with id 1001; I am not changing its files so it will probably fail!
+02-12 03:33:40.745  1712  1712 E PackageManager: Package com.android.Logger was user id 0 but is now user SharedUserSetting{c7e11bc android.uid.system/1000} with id 1000; I am not changing its files so it will probably fail!
+02-12 03:33:40.745  1712  1712 E PackageManager: Package com.qualcomm.qcrilmsgtunnel was user id 0 but is now user SharedUserSetting{f615989 android.uid.phone/1001} with id 1001; I am not changing its files so it will probably fail!
+02-12 03:33:40.746  1712  1712 E PackageManager: Package com.android.providers.settings was user id 0 but is now user SharedUserSetting{c7e11bc android.uid.system/1000} with id 1000; I am not changing its files so it will probably fail!
+02-12 03:33:40.746  1712  1712 E PackageManager: Package com.android.se was user id 0 but is now user SharedUserSetting{ab3fb23 android.uid.se/1068} with id 1068; I am not changing its files so it will probably fail!
+02-12 03:33:40.746  1712  1712 E PackageManager: Package com.android.inputdevices was user id 0 but is now user SharedUserSetting{c7e11bc android.uid.system/1000} with id 1000; I am not changing its files so it will probably fail!
+02-12 03:33:40.747  1712  1712 E PackageManager: Package com.android.server.telecom was user id 0 but is now user SharedUserSetting{c7e11bc android.uid.system/1000} with id 1000; I am not changing its files so it will probably fail!
+02-12 03:33:40.747  1712  1712 E PackageManager: Package com.android.cellbroadcastservice was user id 0 but is now user SharedUserSetting{dadd097 android.uid.networkstack/1073} with id 1073; I am not changing its files so it will probably fail!
+02-12 03:33:40.748  1712  1712 E PackageManager: Package com.android.keychain was user id 0 but is now user SharedUserSetting{c7e11bc android.uid.system/1000} with id 1000; I am not changing its files so it will probably fail!
+02-12 03:33:40.748  1712  1712 E PackageManager: Package com.android.calllogbackup was user id 0 but is now user SharedUserSetting{9395076 android.uid.shared/10027} with id 10027; I am not changing its files so it will probably fail!
+02-12 03:33:40.748  1712  1712 E PackageManager: Package com.android.localtransport was user id 0 but is now user SharedUserSetting{c7e11bc android.uid.system/1000} with id 1000; I am not changing its files so it will probably fail!
+02-12 03:33:40.748  1712  1712 E PackageManager: Package com.android.networkstack.tethering was user id 0 but is now user SharedUserSetting{dadd097 android.uid.networkstack/1073} with id 1073; I am not changing its files so it will probably fail!
+02-12 03:33:40.749  1712  1712 E PackageManager: Package com.android.soundpicker was user id 0 but is now user SharedUserSetting{2554066 android.media/10029} with id 10029; I am not changing its files so it will probably fail!
+02-12 03:33:40.749  1712  1712 E PackageManager: Package com.android.settings was user id 0 but is now user SharedUserSetting{c7e11bc android.uid.system/1000} with id 1000; I am not changing its files so it will probably fail!
+02-12 03:33:40.750  1712  1712 E PackageManager: Package com.qualcomm.qti.cne was user id 0 but is now user SharedUserSetting{556b6f9 com.qualcomm.qti.qtidataservices/10061} with id 10061; I am not changing its files so it will probably fail!
+02-12 03:33:40.750  1712  1712 E PackageManager: Package com.android.cts.ctsshim was user id 0 but is now user SharedUserSetting{caab18b com.android.cts.ctsshim/10099} with id 10099; I am not changing its files so it will probably fail!
+02-12 03:33:40.750  1712  1712 E PackageManager: Package com.android.phone was user id 0 but is now user SharedUserSetting{f615989 android.uid.phone/1001} with id 1001; I am not changing its files so it will probably fail!
+02-12 03:33:40.751  1712  1712 E PackageManager: Package com.android.shell was user id 0 but is now user SharedUserSetting{5b0fd14 android.uid.shell/2000} with id 2000; I am not changing its files so it will probably fail!
+02-12 03:33:40.751  1712  1712 E PackageManager: Package com.android.wallpaperbackup was user id 0 but is now user SharedUserSetting{c7e11bc android.uid.system/1000} with id 1000; I am not changing its files so it will probably fail!
+02-12 03:33:40.751  1712  1712 E PackageManager: Package com.android.providers.blockednumber was user id 0 but is now user SharedUserSetting{9395076 android.uid.shared/10027} with id 10027; I am not changing its files so it will probably fail!
+02-12 03:33:40.752  1712  1712 E PackageManager: Package com.android.providers.userdictionary was user id 0 but is now user SharedUserSetting{9395076 android.uid.shared/10027} with id 10027; I am not changing its files so it will probably fail!
+02-12 03:33:40.752  1712  1712 E PackageManager: Package com.android.emergency was user id 0 but is now user SharedUserSetting{9b3b375 com.android.emergency.uid/10085} with id 10085; I am not changing its files so it will probably fail!
+02-12 03:33:40.753  1712  1712 E PackageManager: Package com.android.location.fused was user id 0 but is now user SharedUserSetting{c7e11bc android.uid.system/1000} with id 1000; I am not changing its files so it will probably fail!
+02-12 03:33:40.753  1712  1712 E PackageManager: Package com.android.systemui was user id 0 but is now user SharedUserSetting{b8a41d6 android.uid.systemui/10090} with id 10090; I am not changing its files so it will probably fail!
+02-12 03:33:40.754  1712  1712 E PackageManager: Package com.android.bluetooth was user id 0 but is now user SharedUserSetting{d9bdc2d android.uid.bluetooth/1002} with id 1002; I am not changing its files so it will probably fail!
+02-12 03:33:40.754  1712  1712 E PackageManager: Package com.android.providers.contacts was user id 0 but is now user SharedUserSetting{9395076 android.uid.shared/10027} with id 10027; I am not changing its files so it will probably fail!
+02-12 03:33:40.786  1712  1712 V SLog    : static_init took to complete: 1ms
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.internal.display.cutout.emulation.noCutout on user 0
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.uwb.resources on user 0
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.internal.display.cutout.emulation.corner on user 0
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.internal.display.cutout.emulation.double on user 0
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.internal.systemui.navbar.gestural_wide_back on user 0
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.settings.overlay.g025j on user 0
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.htmlviewer on user 0
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.connectivity.resources.overlay on user 0
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.connectivity.resources on user 0
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.internal.display.cutout.emulation.hole on user 0
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.internal.display.cutout.emulation.tall on user 0
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.internal.systemui.navbar.threebutton on user 0
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.settings.auto_generated_rro_vendor__ on user 0
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.systemui.auto_generated_rro_vendor__ on user 0
+02-12 03:33:40.786  1712  1712 W PackageSettings: Missing permission state for package com.android.internal.systemui.navbar.gestural_extra_wide_back on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.dreams.basic on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package android.ext.shared on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.wifi.resources on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.storagemanager.auto_generated_rro_vendor__ on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.cameraextensions on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.theme.font.notoserifsource on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.internal.display.cutout.emulation.waterfall on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.providers.partnerbookmarks on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.phone.auto_generated_rro_vendor__ on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.traceur.auto_generated_rro_vendor__ on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.internal.display.cutout.emulation.avoidAppsInCutout on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.wifi.resources.pixel on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.bookmarkprovider on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.emergency.auto_generated_rro_vendor__ on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.nfc.auto_generated_rro_vendor__ on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.internal.systemui.navbar.gestural on user 0
+02-12 03:33:40.787  1712  1712 W PackageSettings: Missing permission state for package com.android.internal.systemui.navbar.gestural_narrow_back on user 0
+02-12 03:33:40.788  1712  1712 W PackageSettings: Missing permission state for package android.auto_generated_rro_vendor__ on user 0
+02-12 03:33:40.788  1712  1712 W PackageSettings: Missing permission state for shared user: android.uid.log
+02-12 03:33:40.788  1712  1712 W PackageSettings: Missing permission state for shared user: android.uid.uwb
+02-12 03:33:40.798  1712  1712 V PackageManagerTiming: read user settings took to complete: 135ms
+02-12 03:33:40.804  1712  1712 D PackageManager: Directories scanned as system partitions: [/system:0, /vendor:524288, /odm:4194304, /oem:262144, /product:1048576, /system_ext:2097152, /apex/com.android.ipsec:8388608, /apex/com.android.media:8388608, /apex/com.android.media.swcodec:8388608, /apex/com.android.scheduling:8388608, /apex/com.android.cellbroadcast:8388608, /apex/com.android.btservices:8388608, /apex/com.android.mediaprovider:8388608, /apex/com.android.art:8388608, /apex/com.android.vndk.v33:8388608, /apex/com.android.os.statsd:8388608, /apex/com.android.appsearch:8388608, /apex/com.android.wifi:8388608, /apex/com.android.runtime:8388608, /apex/com.android.neuralnetworks:8388608, /apex/com.android.tethering:8388608, /apex/com.android.sdkext:8388608, /apex/com.android.extservices:8388608, /apex/com.android.adservices:8388608, /apex/com.android.i18n:8388608, /apex/com.android.uwb:8388608, /apex/com.android.adbd:8388608, /apex/com.android.permission:8388608, /apex/com.android.ondevicepersonalization:8388608, /apex/com.android.vibrator.sunfish:8912896, /apex/com.android.tzdata:8388608, /apex/com.android.apex.cts.shim:8388608, /apex/com.android.resolv:8388608, /apex/com.android.conscrypt:8388608]
+02-12 03:33:40.806  1712  1712 D PackageManager: Keeping known cache ac893ef91d2fd9c8f94faa7cbb6ddf647d383616
+02-12 03:33:40.806  1712  1712 W PackageManager: Wiping cache directory because the system partition changed.
+02-12 03:33:40.988  1712  2003 I PackageParsing: Parse times for '/data/apex/decompressed/com.android.adbd@330400000.decompressed.apex': parse=162ms, update_cache=1 ms
+02-12 03:33:41.071  1712  2006 I PackageParsing: Parse times for '/data/apex/decompressed/com.android.cellbroadcast@330400000.decompressed.apex': parse=163ms, update_cache=1 ms
+02-12 03:33:41.090  1712  2003 I PackageParsing: Parse times for '/data/apex/decompressed/com.android.conscrypt@330400000.decompressed.apex': parse=100ms, update_cache=1 ms
+02-12 03:33:41.226  1712  2005 I PackageParsing: Parse times for '/system/apex/com.android.btservices.apex': parse=370ms, update_cache=1 ms
+02-12 03:33:41.278  1712  2006 I PackageParsing: Parse times for '/data/apex/decompressed/com.android.media@330400000.decompressed.apex': parse=113ms, update_cache=1 ms
+02-12 03:33:41.434  1712  2005 I PackageParsing: Parse times for '/data/apex/decompressed/com.android.media.swcodec@330400000.decompressed.apex': parse=208ms, update_cache=0 ms
+02-12 03:33:41.456  1712  2006 I PackageParsing: Parse times for '/data/apex/decompressed/com.android.mediaprovider@330400000.decompressed.apex': parse=176ms, update_cache=1 ms
+02-12 03:33:41.578  1712  2005 I PackageParsing: Parse times for '/data/apex/decompressed/com.android.neuralnetworks@330400000.decompressed.apex': parse=142ms, update_cache=1 ms
+02-12 03:33:41.578  1712  2004 I PackageParsing: Parse times for '/data/apex/decompressed/com.android.art@330400000.decompressed.apex': parse=723ms, update_cache=0 ms
+02-12 03:33:41.708  1712  2003 I PackageParsing: Parse times for '/system/apex/com.android.i18n.apex': parse=617ms, update_cache=1 ms
+02-12 03:33:41.714  1712  2004 I PackageParsing: Parse times for '/system/apex/com.android.runtime.apex': parse=134ms, update_cache=1 ms
+02-12 03:33:41.777  1712  2006 I PackageParsing: Parse times for '/data/apex/decompressed/com.android.permission@330400000.decompressed.apex': parse=247ms, update_cache=0 ms
+02-12 03:33:41.864  1712  2003 I PackageParsing: Parse times for '/data/apex/decompressed/com.android.wifi@330400000.decompressed.apex': parse=103ms, update_cache=1 ms
+02-12 03:33:41.926  1349  1349 E storaged: getService package_native failed
+02-12 03:33:41.933  1349  2143 I storaged: storaged: Start
+02-12 03:33:42.230  1712  2004 I PackageParsing: Parse times for '/system/apex/com.android.vndk.current.apex': parse=478ms, update_cache=1 ms
+02-12 03:33:42.234  1712  2005 I ApkLiteParseUtils: Skipping target and overlay pair com.android.settings and /product/overlay/SettingsOverlayG025N.apk: overlay ignored due to required system property: ro.boot.hardware.sku with value: G025N
+02-12 03:33:42.235  1712  1712 W PackageManager: Failed to parse /product/overlay/SettingsOverlayG025N.apk: Skipping target and overlay pair com.android.settings and /product/overlay/SettingsOverlayG025N.apk: overlay ignored due to required system property: ro.boot.hardware.sku with value: G025N
+02-12 03:33:42.236  1712  2004 I ApkLiteParseUtils: Skipping target and overlay pair com.android.settings and /product/overlay/SettingsOverlayG025M.apk: overlay ignored due to required system property: ro.boot.hardware.sku with value: G025M
+02-12 03:33:42.242  1712  1712 D CompatibilityChangeReporter: Compat change id reported: 143539591; UID -1; state: DISABLED
+02-12 03:33:42.243  1712  1712 D CompatibilityChangeReporter: Compat change id reported: 168782947; UID -1; state: ENABLED
+02-12 03:33:42.249  1712  1712 W PackageManager: Failed to parse /product/overlay/SettingsOverlayG025M.apk: Skipping target and overlay pair com.android.settings and /product/overlay/SettingsOverlayG025M.apk: overlay ignored due to required system property: ro.boot.hardware.sku with value: G025M
+02-12 03:33:42.278  1712  1712 W PackageManager: Failed to parse /system/framework/oat: Missing base APK in /system/framework/oat
+02-12 03:33:42.278  1712  1712 W PackageManager: Failed to parse /system/framework/arm64: Missing base APK in /system/framework/arm64
+02-12 03:33:42.278  1712  1712 W PackageManager: Failed to parse /system/framework/arm: Missing base APK in /system/framework/arm
+02-12 03:33:42.322  1712  2006 W PackageParsing: android defines a knownSigner permission but the provided knownCerts resource is null
+02-12 03:33:42.323  1712  2006 W PackageParsing: android defines a knownSigner permission but the provided knownCerts resource is null
+02-12 03:33:42.323  1712  2006 W PackageParsing: android defines a knownSigner permission but the provided knownCerts resource is null
+02-12 03:33:42.371  1712  2006 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.POST_NOTIFICATIONS in package: com.android.phone at: Binary XML file line #162
+02-12 03:33:42.410  1712  1712 I PackageManager: /system/priv-app/NetworkStackNext changed; collecting certs
+02-12 03:33:42.412  1712  1712 W PackageManager: Failed to scan /system/priv-app/NetworkStackNext: Application package com.android.networkstack already installed.  Skipping duplicate.
+02-12 03:33:42.427  1712  1712 D CompatibilityChangeReporter: Compat change id reported: 168782947; UID -1; state: DISABLED
+02-12 03:33:42.457  1712  2005 W PackageParsing: No actions in intent-filter at /system/app/CarrierDefaultApp/CarrierDefaultApp.apk Binary XML file line #44
+02-12 03:33:42.549  1712  2006 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.POST_NOTIFICATIONS in package: com.android.dialer at: Binary XML file line #65
+02-12 03:33:42.549  1712  2006 W PackageParsing: Unknown element under <manifest>: meta-data at /product/priv-app/Dialer/Dialer.apk Binary XML file line #122
+02-12 03:33:42.551  1712  2005 W PackageParsing: No actions in intent-filter at /product/priv-app/Contacts/Contacts.apk Binary XML file line #563
+02-12 03:33:42.604  1712  2005 D CompatibilityChangeReporter: Compat change id reported: 150232615; UID -1; state: DISABLED
+02-12 03:33:42.791  1712  2004 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.CONFIGURE_WIFI_DISPLAY in package: com.android.systemui at: Binary XML file line #167
+02-12 03:33:42.792  1712  2004 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.GET_RUNTIME_PERMISSIONS in package: com.android.systemui at: Binary XML file line #236
+02-12 03:33:42.792  1712  2004 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.READ_DEVICE_CONFIG in package: com.android.systemui at: Binary XML file line #337
+02-12 03:33:42.799  1712  2004 I PackageParsing: Parse times for '/system_ext/priv-app/SystemUI': parse=128ms, update_cache=1 ms
+02-12 03:33:42.877  1712  2006 I PackageParsing: Parse times for '/system_ext/priv-app/Settings': parse=224ms, update_cache=2 ms
+02-12 03:33:42.889  1712  1712 I ApexManager: Registering com.android.cellbroadcastservice as apk-in-apex of com.android.cellbroadcast
+02-12 03:33:42.918  1712  1712 I ApexManager: Registering com.android.cellbroadcastreceiver.module as apk-in-apex of com.android.cellbroadcast
+02-12 03:33:42.930  1712  1712 I ApexManager: Registering com.android.bluetooth as apk-in-apex of com.android.btservices
+02-12 03:33:42.943  1712  2003 W PackageParsing: Unknown element under <manifest>: meta-data at /apex/com.android.mediaprovider/priv-app/MediaProvider@TQ3A.230805.001.A2/MediaProvider.apk Binary XML file line #9
+02-12 03:33:42.946  1712  1712 I ApexManager: Registering com.android.providers.media.module as apk-in-apex of com.android.mediaprovider
+02-12 03:33:42.956  1712  1712 I ApexManager: Registering com.android.wifi.resources as apk-in-apex of com.android.wifi
+02-12 03:33:42.964  1712  1712 I ApexManager: Registering com.android.hotspot2.osulogin as apk-in-apex of com.android.wifi
+02-12 03:33:42.964  1712  1712 I ApexManager: Registering com.android.wifi.dialog as apk-in-apex of com.android.wifi
+02-12 03:33:42.971  1712  1712 I ApexManager: Registering com.android.connectivity.resources as apk-in-apex of com.android.tethering
+02-12 03:33:42.973  1712  1712 I ApexManager: Registering com.android.networkstack.tethering as apk-in-apex of com.android.tethering
+02-12 03:33:42.982  1712  1712 I ApexManager: Registering com.android.nearby.halfsheet as apk-in-apex of com.android.tethering
+02-12 03:33:42.989  1712  1712 I ApexManager: Registering android.ext.services as apk-in-apex of com.android.extservices
+02-12 03:33:42.993  1712  1712 I ApexManager: Registering com.android.adservices.api as apk-in-apex of com.android.adservices
+02-12 03:33:42.997  1712  1712 I ApexManager: Registering com.android.sdksandbox as apk-in-apex of com.android.adservices
+02-12 03:33:43.002  1712  1712 I ApexManager: Registering com.android.uwb.resources as apk-in-apex of com.android.uwb
+02-12 03:33:43.008  1712  1712 I ApexManager: Registering com.android.safetycenter.resources as apk-in-apex of com.android.permission
+02-12 03:33:43.023  1712  2006 W PackageParsing: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.OBSERVE_SENSOR_PRIVACY in package: com.android.permissioncontroller at: Binary XML file line #59
+02-12 03:33:43.029  1712  1712 I ApexManager: Registering com.android.permissioncontroller as apk-in-apex of com.android.permission
+02-12 03:33:43.034  1712  1712 I ApexManager: Registering com.android.ondevicepersonalization.services as apk-in-apex of com.android.ondevicepersonalization
+02-12 03:33:43.039  1712  1712 I ApexManager: Registering com.android.cts.priv.ctsshim as apk-in-apex of com.android.apex.cts.shim
+02-12 03:33:43.044  1712  1712 I ApexManager: Registering com.android.cts.ctsshim as apk-in-apex of com.android.apex.cts.shim
+02-12 03:33:43.048  1712  1712 I PackageManager: Finished scanning system apps. Time: 2245 ms, packageCount: 141 , timePerPackage: 15 , cached: 0
+02-12 03:33:43.048  1712  1712 I PackageManager: Finished scanning non-system apps. Time: 0 ms, packageCount: 0 , timePerPackage: 0 , cached: 0
+02-12 03:33:43.049  1712  1712 E PackageManager: updateAllSharedLibrariesLPw failed: Package org.codeaurora.ims requires unavailable shared library ims-ext-common; failing!
+02-12 03:33:43.052  1712  1712 I PackageManager: Time to scan packages: 2.25 seconds
+02-12 03:33:43.052  1712  1712 I PackageManager: Permission ownership changed. Updating all permissions.
+02-12 03:33:43.063  1712  1712 W PackageManager: Package com.android.providers.media.module is an APK in APEX, but has permission allowlist on the system image. Please bundle the allowlist in the com.android.mediaprovider APEX instead.
+02-12 03:33:43.064  1712  1712 W PackageManager: Package com.android.providers.media.module is an APK in APEX, but has permission allowlist on the system image. Please bundle the allowlist in the com.android.mediaprovider APEX instead.
+02-12 03:33:43.064  1712  1712 W PackageManager: Package com.android.providers.media.module is an APK in APEX, but has permission allowlist on the system image. Please bundle the allowlist in the com.android.mediaprovider APEX instead.
+02-12 03:33:43.064  1712  1712 W PackageManager: Package com.android.providers.media.module is an APK in APEX, but has permission allowlist on the system image. Please bundle the allowlist in the com.android.mediaprovider APEX instead.
+02-12 03:33:43.064  1712  1712 W PackageManager: Package com.android.providers.media.module is an APK in APEX, but has permission allowlist on the system image. Please bundle the allowlist in the com.android.mediaprovider APEX instead.
+02-12 03:33:43.064  1712  1712 W PackageManager: Package com.android.providers.media.module is an APK in APEX, but has permission allowlist on the system image. Please bundle the allowlist in the com.android.mediaprovider APEX instead.
+02-12 03:33:43.064  1712  1712 W PackageManager: Package com.android.providers.media.module is an APK in APEX, but has permission allowlist on the system image. Please bundle the allowlist in the com.android.mediaprovider APEX instead.
+02-12 03:33:43.064  1712  1712 W PackageManager: Package com.android.providers.media.module is an APK in APEX, but has permission allowlist on the system image. Please bundle the allowlist in the com.android.mediaprovider APEX instead.
+02-12 03:33:43.064  1712  1712 W PackageManager: Package com.android.providers.media.module is an APK in APEX, but has permission allowlist on the system image. Please bundle the allowlist in the com.android.mediaprovider APEX instead.
+02-12 03:33:43.064  1712  1712 W PackageManager: Package com.android.providers.media.module is an APK in APEX, but has permission allowlist on the system image. Please bundle the allowlist in the com.android.mediaprovider APEX instead.
+02-12 03:33:43.064  1712  1712 W PackageManager: Package com.android.providers.media.module is an APK in APEX, but has permission allowlist on the system image. Please bundle the allowlist in the com.android.mediaprovider APEX instead.
+02-12 03:33:43.064  1712  1712 W PackageManager: Package com.android.providers.media.module is an APK in APEX, but has permission allowlist on the system image. Please bundle the allowlist in the com.android.mediaprovider APEX instead.
+02-12 03:33:43.064  1712  1712 W PackageManager: Package com.android.providers.media.module is an APK in APEX, but has permission allowlist on the system image. Please bundle the allowlist in the com.android.mediaprovider APEX instead.
+02-12 03:33:43.066  1712  1712 V PackageManager: reconcileAppsData for null u0 0x1 migrateAppData=true
+02-12 03:33:43.115  1712  1712 V PackageManager: reconcileAppsData finished 29 packages
+02-12 03:33:43.115  1712  1712 D PackageManagerTiming: write settings
+02-12 03:33:43.115  1712  2273 D SystemServerTimingAsync: InitThreadPoolExec:prepareAppData
+02-12 03:33:43.115  1712  2273 D SystemServerInitThreadPool: Started executing prepareAppData
+02-12 03:33:43.137  1712  1712 V PackageManagerTiming: write settings took to complete: 22ms
+02-12 03:33:43.138  1712  1712 W PackageManager: Domain verification agent not found
+02-12 03:33:43.139  1712  1712 D PackageManager: Ephemeral resolver NOT found; no matching intent filters
+02-12 03:33:43.140  1712  1712 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+02-12 03:33:43.140  1712  1712 D PackageManager: Clear ephemeral installer activity
+02-12 03:33:43.143  1712  1712 D PackageManagerTiming: GC
+02-12 03:33:43.143  1712  1712 V PackageManagerTiming: GC took to complete: 0ms
+02-12 03:33:43.143  1712  1712 I PackageManager: Fix for b/169414761 is applied
+02-12 03:33:43.143  1712  1712 V PackageManagerTiming: create package manager took to complete: 2532ms
+02-12 03:33:43.143  1712  1712 V UserSystemPackageInstaller: Checking that all system packages are whitelisted.
+02-12 03:33:43.145  1712  1712 W UserSystemPackageInstaller: checkWhitelistedSystemPackages(mode=d) has 51 warnings:
+02-12 03:33:43.145  1712  1712 W UserSystemPackageInstaller: com.android.theme.color.amethyst is allowlisted but not present.
+02-12 03:33:43.145  1712  1712 W UserSystemPackageInstaller: com.android.theme.icon.pebble is allowlisted but not present.
+02-12 03:33:43.145  1712  1712 W UserSystemPackageInstaller: com.android.theme.color.sand is allowlisted but not present.
+02-12 03:33:43.145  1712  1712 W UserSystemPackageInstaller: com.android.theme.icon.vessel is allowlisted but not present.
+02-12 03:33:43.145  1712  1712 W UserSystemPackageInstaller: com.android.theme.color.cinnamon is allowlisted but not present.
